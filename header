@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block title %}Employee Dashboard{% endblock %}
+
+
+{% block links %}
+  <!-- Custom styles for this template-->
+  <link href="/static/css/sb-admin.css" rel="stylesheet">
+{% endblock %}
+{% block body %}
+<!--html goes here-->
+{% endblock %}
