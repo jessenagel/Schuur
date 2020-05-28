@@ -22,5 +22,4 @@ urlpatterns = [
     path('people/', include('people.urls')),
     path('vehicle/', include('vehicle.urls')),
     path('', views.Index.as_view(), name='index'),
-    path('login/', views.Login.as_view(), name='login'),
 ]

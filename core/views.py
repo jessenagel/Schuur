@@ -5,13 +5,13 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.mixins import LoginRequiredMixin
 from people.models import Driver
-
+from vehicle.models import Vehicle
 class Index(LoginRequiredMixin, View):
     template = 'index.html'
     login_url = '/login/'
 
     def get(self, request):
-        employees = Driver.objects.all()
+        employees = Vehicle.objects.all()
         return render(request, self.template, {'employees': employees})
 
 
